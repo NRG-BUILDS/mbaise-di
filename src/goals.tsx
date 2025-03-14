@@ -19,13 +19,13 @@ const Goals = () => {
             </p>
 
             <ol className="list-disc list-inside">
-              <li className="text-xl font-bold uppercase text-white dark:text-gray-100">
+              <li className="text-xl font-bold uppercase dark:text-gray-100">
                 Prosperity
               </li>
-              <li className="text-xl font-bold uppercase text-white dark:text-gray-100">
+              <li className="text-xl font-bold uppercase dark:text-gray-100">
                 Peace
               </li>
-              <li className="text-xl font-bold uppercase text-white dark:text-gray-100">
+              <li className="text-xl font-bold uppercase dark:text-gray-100">
                 Progress
               </li>
             </ol>
