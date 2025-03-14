@@ -11,9 +11,12 @@ const Hero = () => {
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
           similique obcaecati illum mollitia.
         </p>
-        <button className="mt-6 rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto">
+        <a
+          href="#who-are-we"
+          className=" inline-block mt-6 rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto"
+        >
           Learn More
-        </button>
+        </a>
         <p className="mt-3 text-sm text-gray-400">Join our newsletter</p>
       </div>
 
