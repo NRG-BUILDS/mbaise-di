@@ -654,7 +654,7 @@ function App() {
               href="#"
               className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
             >
-              Brand
+              Mbaise-di
             </a>
 
             <p className="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">
