@@ -1,8 +1,8 @@
 const History = () => {
   return (
-    <section className="bg-white dark:bg-gray-900" id="history">
+    <section className="bg-white no-dark:bg-gray-900" id="history">
       <div className="container mx-auto px-6 py-10">
-        <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
+        <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
           Our History
         </h1>
 
@@ -44,10 +44,10 @@ const History = () => {
               />
 
               <div className="mt-4 text-center">
-                <h1 className="font-semibold text-gray-800 dark:text-white">
+                <h1 className="font-semibold text-gray-800 no-dark:text-white">
                   Mia Brown
                 </h1>
-                <span className="text-sm text-gray-500 dark:text-gray-400">
+                <span className="text-sm text-gray-500 no-dark:text-gray-400">
                   Marketer
                 </span>
               </div>

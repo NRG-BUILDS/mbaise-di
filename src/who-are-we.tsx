@@ -46,13 +46,13 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="bg-white dark:bg-gray-900" id="who-are-we">
+    <section className="bg-white no-dark:bg-gray-900" id="who-are-we">
       <div className="container mx-auto px-6 py-10">
-        <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
+        <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
           Who Are We?
         </h1>
 
-        <p className="mt-4 text-center text-gray-500 dark:text-gray-300">
+        <p className="mt-4 text-center text-gray-500 no-dark:text-gray-300">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
           voluptatibus
         </p>
@@ -65,10 +65,10 @@ const WhoWeAre = () => {
                 src={service.image}
                 alt={service.title}
               />
-              <h2 className="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">
+              <h2 className="mt-4 text-2xl font-semibold capitalize text-gray-800 no-dark:text-white">
                 {service.title}
               </h2>
-              <p className="mt-2 text-lg tracking-wider text-blue-500 dark:text-blue-400">
+              <p className="mt-2 text-lg tracking-wider text-blue-500 no-dark:text-blue-400">
                 {service.content}
               </p>
             </div>

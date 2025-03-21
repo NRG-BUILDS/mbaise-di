@@ -4,11 +4,11 @@ import History from "./history";
 import Nav from "./nav";
 import WhatWeDo from "./what-we-do";
 import WhoWeAre from "./who-are-we";
-
+import { adverts } from "./ads";
 function App() {
   return (
     <main>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white no-dark:bg-gray-900">
         <Nav />
         <Hero />
       </section>
@@ -18,171 +18,113 @@ function App() {
 
       <WhatWeDo />
 
-      {/* <section className="bg-white dark:bg-gray-900">
+      {/* AD BLOCK */}
+      <section className="bg-white no-dark:bg-gray-900">
         <div className="container mx-auto px-6 py-10">
           <div className="text-center">
-            <h1 className="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
-              From the blog
+            <h1 className="text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
+              Advertisement
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
-              Salami mustard spice tea fridge authentic Chinese food dish salt
-              tasty liquor. Sweet savory foodtruck pie.
+              Discover the best deals and offers tailored for you from our
+              partners.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-              <div className="relative">
-                <img
-                  className="h-64 w-full rounded-lg object-cover object-center lg:h-80"
-                  src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  alt=""
-                />
-
-                <div className="absolute bottom-0 flex bg-white p-3 dark:bg-gray-900">
+            {adverts.map((ad) => (
+              <div>
+                <div className="relative">
                   <img
-                    className="h-10 w-10 rounded-full object-cover object-center"
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                    className="h-64 w-full rounded-lg object-cover object-center lg:h-80"
+                    src={ad.image}
                     alt=""
                   />
 
-                  <div className="mx-4">
-                    <h1 className="text-sm text-gray-700 dark:text-gray-200">
-                      Tom Hank
-                    </h1>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Creative Director
-                    </p>
+                  <div className="absolute bottom-0 flex bg-white p-3 no-dark:bg-gray-900">
+                    <div className="mx-4">
+                      <h1 className="text-sm text-gray-700 no-dark:text-gray-200">
+                        {ad.client}
+                      </h1>
+                      <p className="text-sm text-gray-500 no-dark:text-gray-400">
+                        {ad.contact}
+                      </p>
+                    </div>
                   </div>
+                </div>
+
+                <h1 className="mt-6 text-xl font-semibold text-gray-800 no-dark:text-white">
+                  {ad.title}
+                </h1>
+
+                <hr className="my-6 w-32 text-blue-500" />
+
+                <p className="text-sm text-gray-500 no-dark:text-gray-400">
+                  {ad.content}
+                </p>
+
+                <a
+                  href={ad.link}
+                  className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
+                >
+                  {ad.action}
+                </a>
+              </div>
+            ))}
+            <div className="md:col-span-2 xl:col-span-3">
+              <div className="relative">
+                <div className="h-64 w-full rounded-lg border-dashed border-2 border-neutral-500 hover:border-purple-500 flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-16 w-16 text-neutral-500 mx-auto hover:text-purple-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
                 </div>
               </div>
 
-              <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
-                What do you want to know about UI
+              <h1 className="mt-6 text-xl font-semibold text-gray-800 no-dark:text-white">
+                Spotlight your brand here!
               </h1>
 
               <hr className="my-6 w-32 text-blue-500" />
 
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit dolorum amet dolores praesentium, alias nam?
-                Tempore
+              <p className="text-sm text-gray-500 no-dark:text-gray-400">
+                Chat with us now to place your advertisement and reach a wider
+                audience.
               </p>
 
               <a
-                href="#"
+                href={"https://wa.me/+2349079711780"}
                 className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
               >
-                Read more
-              </a>
-            </div>
-
-            <div>
-              <div className="relative">
-                <img
-                  className="h-64 w-full rounded-lg object-cover object-center lg:h-80"
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  alt=""
-                />
-
-                <div className="absolute bottom-0 flex bg-white p-3 dark:bg-gray-900">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover object-center"
-                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt=""
-                  />
-
-                  <div className="mx-4">
-                    <h1 className="text-sm text-gray-700 dark:text-gray-200">
-                      arthur melo
-                    </h1>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Creative Director
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
-                All the features you want to know
-              </h1>
-
-              <hr className="my-6 w-32 text-blue-500" />
-
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit dolorum amet dolores praesentium, alias nam?
-                Tempore
-              </p>
-
-              <a
-                href="#"
-                className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
-              >
-                Read more
-              </a>
-            </div>
-
-            <div>
-              <div className="relative">
-                <img
-                  className="h-64 w-full rounded-lg object-cover object-center lg:h-80"
-                  src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
-                  alt=""
-                />
-
-                <div className="absolute bottom-0 flex bg-white p-3 dark:bg-gray-900">
-                  <img
-                    className="h-10 w-10 rounded-full object-cover object-center"
-                    src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                    alt=""
-                  />
-
-                  <div className="mx-4">
-                    <h1 className="text-sm text-gray-700 dark:text-gray-200">
-                      Amelia. Anderson
-                    </h1>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Lead Developer
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <h1 className="mt-6 text-xl font-semibold text-gray-800 dark:text-white">
-                Which services you get from Meraki UI
-              </h1>
-
-              <hr className="my-6 w-32 text-blue-500" />
-
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis fugit dolorum amet dolores praesentium, alias nam?
-                Tempore
-              </p>
-
-              <a
-                href="#"
-                className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
-              >
-                Read more
+                Chat with us on WhatsApp
               </a>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="bg-white dark:bg-gray-900">
+      {/* FAQs */}
+      {/* <section className="bg-white no-dark:bg-gray-900">
         <div className="container mx-auto max-w-4xl px-6 py-10">
-          <h1 className="text-center text-4xl font-semibold text-gray-800 dark:text-white">
+          <h1 className="text-center text-4xl font-semibold text-gray-800 no-dark:text-white">
             Frequently asked questions
           </h1>
 
           <div className="mt-12 space-y-8">
-            <div className="rounded-lg border-2 border-gray-100 dark:border-gray-700">
+            <div className="rounded-lg border-2 border-gray-100 no-dark:border-gray-700">
               <button className="flex w-full items-center justify-between p-8">
-                <h1 className="font-semibold text-gray-700 dark:text-white">
+                <h1 className="font-semibold text-gray-700 no-dark:text-white">
                   How i can play for my appoinment ?
                 </h1>
 
@@ -204,9 +146,9 @@ function App() {
                 </span>
               </button>
 
-              <hr className="border-gray-200 dark:border-gray-700" />
+              <hr className="border-gray-200 no-dark:border-gray-700" />
 
-              <p className="p-8 text-sm text-gray-500 dark:text-gray-300">
+              <p className="p-8 text-sm text-gray-500 no-dark:text-gray-300">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Voluptas eaque nobis, fugit odit omnis fugiat deleniti animi ab
                 maxime cum laboriosam recusandae facere dolorum veniam quia
@@ -214,9 +156,9 @@ function App() {
               </p>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-100 dark:border-gray-700">
+            <div className="rounded-lg border-2 border-gray-100 no-dark:border-gray-700">
               <button className="flex w-full items-center justify-between p-8">
-                <h1 className="font-semibold text-gray-700 dark:text-white">
+                <h1 className="font-semibold text-gray-700 no-dark:text-white">
                   Is the cost of the appoinment covered by private health
                   insurance?
                 </h1>
@@ -240,9 +182,9 @@ function App() {
               </button>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-100 dark:border-gray-700">
+            <div className="rounded-lg border-2 border-gray-100 no-dark:border-gray-700">
               <button className="flex w-full items-center justify-between p-8">
-                <h1 className="font-semibold text-gray-700 dark:text-white">
+                <h1 className="font-semibold text-gray-700 no-dark:text-white">
                   Do i need a referral?
                 </h1>
 
@@ -265,9 +207,9 @@ function App() {
               </button>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-100 dark:border-gray-700">
+            <div className="rounded-lg border-2 border-gray-100 no-dark:border-gray-700">
               <button className="flex w-full items-center justify-between p-8">
-                <h1 className="font-semibold text-gray-700 dark:text-white">
+                <h1 className="font-semibold text-gray-700 no-dark:text-white">
                   What are your opening house?
                 </h1>
 
@@ -290,9 +232,9 @@ function App() {
               </button>
             </div>
 
-            <div className="rounded-lg border-2 border-gray-100 dark:border-gray-700">
+            <div className="rounded-lg border-2 border-gray-100 no-dark:border-gray-700">
               <button className="flex w-full items-center justify-between p-8">
-                <h1 className="font-semibold text-gray-700 dark:text-white">
+                <h1 className="font-semibold text-gray-700 no-dark:text-white">
                   What can i expect at my first consultation?
                 </h1>
 
@@ -320,7 +262,7 @@ function App() {
 
       <section
         id="contact"
-        className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 dark:from-gray-700 dark:via-gray-800 dark:to-gray-900"
+        className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 no-dark:from-gray-700 no-dark:via-gray-800 no-dark:to-gray-900"
       >
         <div className="container mx-auto flex min-h-screen flex-col px-6 py-12">
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
@@ -485,40 +427,40 @@ function App() {
             </div>
 
             <div className="mt-8 lg:mx-6 lg:w-1/2">
-              <div className="mx-auto w-full overflow-hidden rounded-xl bg-white px-8 py-10 shadow-2xl dark:bg-gray-900 lg:max-w-xl">
-                <h1 className="text-2xl font-medium text-gray-700 dark:text-gray-200">
+              <div className="mx-auto w-full overflow-hidden rounded-xl bg-white px-8 py-10 shadow-2xl no-dark:bg-gray-900 lg:max-w-xl">
+                <h1 className="text-2xl font-medium text-gray-700 no-dark:text-gray-200">
                   Contact form
                 </h1>
 
                 <form className="mt-6">
                   <div className="flex-1">
-                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                    <label className="mb-2 block text-sm text-gray-600 no-dark:text-gray-200">
                       Full Name
                     </label>
                     <input
                       type="text"
                       placeholder="John Doe"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300"
                     />
                   </div>
 
                   <div className="mt-6 flex-1">
-                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                    <label className="mb-2 block text-sm text-gray-600 no-dark:text-gray-200">
                       Email address
                     </label>
                     <input
                       type="email"
                       placeholder="johndoe@example.com"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300"
                     />
                   </div>
 
                   <div className="mt-6 w-full">
-                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                    <label className="mb-2 block text-sm text-gray-600 no-dark:text-gray-200">
                       Message
                     </label>
                     <textarea
-                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300 md:h-48"
+                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300 md:h-48"
                       placeholder="Message"
                     ></textarea>
                   </div>
@@ -533,38 +475,38 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-white no-dark:bg-gray-900">
         <div className="container mx-auto px-6 py-12">
           <div className="md:-mx-3 md:flex md:items-center md:justify-between">
-            <h1 className="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white md:mx-3 xl:text-4xl">
+            <h1 className="text-3xl font-semibold tracking-tight text-gray-800 no-dark:text-white md:mx-3 xl:text-4xl">
               Subscribe our newsletter to get update.
             </h1>
           </div>
 
-          <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
+          <hr className="my-6 border-gray-200 no-dark:border-gray-700 md:my-10" />
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div>
-              <p className="font-semibold text-gray-800 dark:text-white">
+              <p className="font-semibold text-gray-800 no-dark:text-white">
                 Quick Link
               </p>
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Who We Are
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Our Philosophy
                 </a>
@@ -572,26 +514,26 @@ function App() {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-800 dark:text-white">
+              <p className="font-semibold text-gray-800 no-dark:text-white">
                 Industries
               </p>
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Retail & E-Commerce
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Information Technology
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Finance & Insurance
                 </a>
@@ -599,26 +541,26 @@ function App() {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-800 dark:text-white">
+              <p className="font-semibold text-gray-800 no-dark:text-white">
                 Services
               </p>
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Translation
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Proofreading & Editing
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   Content Creation
                 </a>
@@ -626,20 +568,20 @@ function App() {
             </div>
 
             <div>
-              <p className="font-semibold text-gray-800 dark:text-white">
+              <p className="font-semibold text-gray-800 no-dark:text-white">
                 Contact Us
               </p>
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   +880 768 473 4978
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
                 >
                   info@merakiui.com
                 </a>
@@ -647,17 +589,17 @@ function App() {
             </div>
           </div>
 
-          <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
+          <hr className="my-6 border-gray-200 no-dark:border-gray-700 md:my-10" />
 
           <div className="flex flex-col items-center justify-between sm:flex-row">
             <a
               href="#"
-              className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300"
+              className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 no-dark:text-white no-dark:hover:text-gray-300"
             >
               Mbaise-di
             </a>
 
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">
+            <p className="mt-4 text-sm text-gray-500 no-dark:text-gray-300 sm:mt-0">
               © Copyright 2021. All Rights Reserved.
             </p>
           </div>

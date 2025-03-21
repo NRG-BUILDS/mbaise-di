@@ -36,10 +36,10 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="h-[32rem] bg-gray-100 dark:bg-gray-800">
+    <section className="bg-white no-dark:bg-gray-900">
+      <div className="h-[32rem] bg-gray-100 no-dark:bg-gray-800">
         <div className="container mx-auto px-6 py-10">
-          <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
+          <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
             What We Do?
           </h1>
 
@@ -49,7 +49,7 @@ const WhatWeDo = () => {
             <span className="inline-block h-1 w-1 rounded-full bg-blue-500"></span>
           </div>
 
-          <p className="mx-auto mt-6 max-w-2xl text-center text-gray-500 dark:text-gray-300">
+          <p className="mx-auto mt-6 max-w-2xl text-center text-gray-500 no-dark:text-gray-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
             incidunt ex placeat modi magni quia error alias, adipisci rem
             similique, at omnis eligendi optio eos harum.
@@ -60,18 +60,18 @@ const WhatWeDo = () => {
       <div className="container mx-auto -mt-72 px-6 py-10 sm:-mt-80 md:-mt-96">
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-3">
           {whatWeDo.map((e) => (
-            <div className="flex flex-col items-start rounded-xl border p-4 dark:border-gray-700 sm:p-6">
+            <div className="flex flex-col items-start rounded-xl border p-4 no-dark:border-gray-700 sm:p-6">
               <img
                 className="aspect-square w-full rounded-xl object-cover"
                 src={e.image}
                 alt=""
               />
 
-              <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 dark:text-white">
+              <h1 className="mt-4 text-2xl font-semibold capitalize text-gray-700 no-dark:text-white">
                 {e.title}
               </h1>
 
-              <p className="mt-2 capitalize text-gray-500 dark:text-gray-300">
+              <p className="mt-2 capitalize text-gray-500 no-dark:text-gray-300">
                 {e.content}
               </p>
             </div>
