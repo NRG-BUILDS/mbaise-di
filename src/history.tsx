@@ -15,7 +15,7 @@ const History = () => {
         <div className="mx-auto mt-16 flex max-w-6xl items-start">
           <div>
             <p className=" text-center text-gray-500 lg:mx-8">
-              <b className="text-white">Mbaise-di </b>
+              <b className="text-bold">Mbaise </b>
               is a community rooted in unity, tradition, and progress. Formed by
               the coming together of five great kingdoms, our people share a
               rich cultural heritage, deep ancestral values, and a commitment to

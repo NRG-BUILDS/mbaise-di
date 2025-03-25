@@ -23,7 +23,7 @@ function App() {
         <div className="container mx-auto px-6 py-10">
           <div className="text-center">
             <h1 className="text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
-              Advertisement
+              Vacancies
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
@@ -72,23 +72,30 @@ function App() {
                 </a>
               </div>
             ))}
-            <div className="md:col-span-2 xl:col-span-3">
+
+            <a
+              href={"https://wa.me/+2349079711780"}
+              className="block md:col-span-2 xl:col-span-3"
+            >
               <div className="relative">
-                <div className="h-64 w-full rounded-lg border-dashed border-2 border-neutral-500 hover:border-purple-500 flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-16 w-16 text-neutral-500 mx-auto hover:text-purple-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
+                <div className="h-64 w-full rounded-lg border-dashed border-2 border-neutral-500 hover:border-purple-500 flex items-center justify-center">
+                  <div className="space-y-2 text-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-16 w-16 text-neutral-500 mx-auto hover:text-purple-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                    <p>Advertise your business with Us</p>
+                  </div>
                 </div>
               </div>
 
@@ -103,13 +110,10 @@ function App() {
                 audience.
               </p>
 
-              <a
-                href={"https://wa.me/+2349079711780"}
-                className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
-              >
+              <p className="mt-4 inline-block text-blue-500 underline hover:text-blue-400">
                 Chat with us on WhatsApp
-              </a>
-            </div>
+              </p>
+            </a>
           </div>
         </div>
       </section>
