@@ -2,37 +2,56 @@ import legalPic from "@/assets/images/whatWeDo/legal.jpg";
 import adovacyPic from "@/assets/images/whatWeDo/advocacy.jpg";
 import investmentPic from "@/assets/images/whatWeDo/investment.webp";
 import employmentPic from "@/assets/images/whatWeDo/employment.jpg";
-import advertisingtPic from "@/assets/images/whatWeDo/advertising.webp";
+import healthcarePic from "@/assets/images/whatWeDo/healthcare.jpg";
+import securityPic from "@/assets/images/whatWeDo/security.jpg";
+import educationPic from "@/assets/images/whatWeDo/schooling.jpg";
 
 const WhatWeDo = () => {
   const whatWeDo = [
     {
       title: "Advocacy",
-      content:
-        "Challenging government institutions as they affect our people. Demand for accountability.",
+      content: "Championing the cause of the common man.",
       image: adovacyPic,
     },
     {
       title: "Legal Counsel",
-      content: "Free legal services.",
+      content:
+        "Offering free legal services on a first step consultation , with a view to diffuse and ensure conflict resolutions in our communities.",
       image: legalPic,
     },
     {
       title: "Investments",
-      content: "Environmental scanning for opportunities.",
+      content: "Investments in financial and productin services.",
       image: investmentPic,
     },
     {
       title: "Employment",
-      content: "Scan for job and business opportunities.",
+      content:
+        "Creating jobs and employment for our vast array of unskilled, skilled and educated workforce.",
       image: employmentPic,
     },
     {
-      title: "Advertising",
+      title: "Education",
       content:
-        "Opportunities for creating awareness about economic and social activities that add value to our people.",
-      image: advertisingtPic,
+        "Championing the unassailable right to education of every Mbaise child.",
+      image: educationPic,
     },
+    {
+      title: "Healthcare",
+      content: "Promoting a healthy and joyous society",
+      image: healthcarePic,
+    },
+    {
+      title: "Security",
+      content: "The protection and safety we all need.",
+      image: securityPic,
+    },
+    // {
+    //   title: "Advertising",
+    //   content:
+    //     "Opportunities for creating awareness about economic and social activities that add value to our people.",
+    //   image: advertisingtPic,
+    // },
   ];
 
   return (
@@ -40,7 +59,7 @@ const WhatWeDo = () => {
       <div className="h-[32rem] bg-gray-100 no-dark:bg-gray-800">
         <div className="container mx-auto px-6 py-10">
           <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
-            What We Do?
+            Our Mandate
           </h1>
 
           <div className="mx-auto mt-6 flex justify-center">

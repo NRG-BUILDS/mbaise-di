@@ -4,7 +4,8 @@ import History from "./history";
 import Nav from "./nav";
 import WhatWeDo from "./what-we-do";
 import WhoWeAre from "./who-are-we";
-import { adverts } from "./ads";
+import { adverts, news } from "./ads";
+import NewsCard from "./components/NewsCard";
 function App() {
   return (
     <main>
@@ -23,7 +24,7 @@ function App() {
         <div className="container mx-auto px-6 py-10">
           <div className="text-center">
             <h1 className="text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
-              Vacancies
+              Socioeconomic Services
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
@@ -114,6 +115,27 @@ function App() {
                 Chat with us on WhatsApp
               </p>
             </a>
+          </div>
+        </div>
+      </section>
+      {/* NEWS SECTION */}
+      <section className="bg-white no-dark:bg-gray-900">
+        <div className="container mx-auto px-6 py-10">
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
+              NEWS
+            </h1>
+
+            <p className="mx-auto mt-4 max-w-lg text-gray-500">
+              Discover the best deals and offers tailored for you from our
+              partners.
+            </p>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
+            {news.map((news, i) => (
+              <NewsCard news={news} key={i} />
+            ))}
           </div>
         </div>
       </section>
