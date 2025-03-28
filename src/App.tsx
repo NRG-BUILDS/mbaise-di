@@ -127,8 +127,7 @@ function App() {
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
-              Discover the best deals and offers tailored for you from our
-              partners.
+              News of significant importance happening in Mbaise Nation.
             </p>
           </div>
 
