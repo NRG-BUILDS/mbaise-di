@@ -14,17 +14,6 @@ const NewsCard = ({ news }: Props) => {
           src={news.image}
           alt=""
         />
-
-        <div className="absolute bottom-0 flex bg-white p-3 no-dark:bg-gray-900">
-          <div className="mx-4">
-            <h1 className="text-sm text-gray-700 no-dark:text-gray-200">
-              {news.photo_caption}
-            </h1>
-            <p className="text-sm text-gray-500 no-dark:text-gray-400">
-              {news.date}
-            </p>
-          </div>
-        </div>
       </div>
 
       <h1 className="mt-6 text-xl font-semibold text-gray-800 no-dark:text-white">
