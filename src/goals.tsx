@@ -3,14 +3,14 @@ const Goals = () => {
     <div className="bg-white no-dark:bg-gray-900">
       <div className="container mx-auto px-6 py-8">
         <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
-          Our Mandate
+          Our Mandates
         </h1>
 
-        <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 no-dark:text-gray-300 xl:mt-6">
+        {/* <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 no-dark:text-gray-300 xl:mt-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas
           magni libero consequuntur voluptatum velit amet id repudiandae ea,
           deleniti laborum in neque eveniet.
-        </p>
+        </p> */}
 
         <div className="mt-6 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:gap-12">
           <div className="w-full space-y-8 rounded-lg border border-gray-200 p-8  no-dark:border-gray-700">
