@@ -28,8 +28,7 @@ const Home = () => {
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
-              Discover the best deals and offers tailored for you from our
-              partners.
+              Putting out information here on vacancies in our spheres of influence , job openings.
             </p>
           </div>
 
