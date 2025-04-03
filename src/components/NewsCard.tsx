@@ -18,10 +18,10 @@ const NewsCard = ({ news }: Props) => {
         <div className="absolute bottom-0 flex bg-white p-3 no-dark:bg-gray-900">
           <div className="mx-4">
             <h1 className="text-sm text-gray-700 no-dark:text-gray-200">
-              {news.client}
+              {news.photo_caption}
             </h1>
             <p className="text-sm text-gray-500 no-dark:text-gray-400">
-              {news.contact}
+              {news.date}
             </p>
           </div>
         </div>

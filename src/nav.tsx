@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -83,6 +84,12 @@ const Nav = () => {
           >
             History
           </a>
+          <Link
+            className="transform text-gray-700 transition-colors duration-300 hover:text-blue-500 no-dark:text-gray-200 no-dark:hover:text-blue-400 lg:mx-8"
+            to="/news"
+          >
+            News
+          </Link>
           <a
             className="transform text-gray-700 transition-colors duration-300 hover:text-blue-500 no-dark:text-gray-200 no-dark:hover:text-blue-400 lg:mx-8"
             href="#contact"
