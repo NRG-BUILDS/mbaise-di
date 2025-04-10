@@ -8,7 +8,8 @@ const Hero = () => {
           Mbaise-di
         </h1>
         <p className="mt-6 text-gray-500 no-dark:text-gray-300">
-          Strengthening Our Heritage, Empowering Our People
+          An Association of Mbaise Sons and Daughters Aimed at Strengthening Our
+          Heritage and Empowering Our People
         </p>
         <div className="flex items-center justify-center gap-3 my-3">
           <a
