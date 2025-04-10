@@ -17,7 +17,7 @@ const Hero = () => {
           >
             Learn More
           </a>
-          <p className="text-sm text-gray-400">Join our newsletter</p>
+          {/* <p className="text-sm text-gray-400">Join our newsletter</p> */}
         </div>
       </div>
 

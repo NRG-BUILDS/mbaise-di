@@ -52,10 +52,10 @@ const WhoWeAre = () => {
           Who Are We?
         </h1>
 
-        <p className="mt-4 text-center text-gray-500 no-dark:text-gray-300">
+        {/* <p className="mt-4 text-center text-gray-500 no-dark:text-gray-300">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam
           voluptatibus
-        </p>
+        </p> */}
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:grid-cols-3 xl:gap-12">
           {services.map((service, index) => (

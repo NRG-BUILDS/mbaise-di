@@ -28,7 +28,8 @@ const Home = () => {
             </h1>
 
             <p className="mx-auto mt-4 max-w-lg text-gray-500">
-              Putting out information here on vacancies in our spheres of influence , job openings.
+              Putting out information here on vacancies in our spheres of
+              influence , job openings.
             </p>
           </div>
 
@@ -593,7 +594,7 @@ const Home = () => {
             </a>
 
             <p className="mt-4 text-sm text-gray-500 no-dark:text-gray-300 sm:mt-0">
-              © Copyright 2021. All Rights Reserved.
+              © Copyright 2025. All Rights Reserved.
             </p>
           </div>
         </div>

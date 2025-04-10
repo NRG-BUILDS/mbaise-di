@@ -2,10 +2,6 @@ const Goals = () => {
   return (
     <div className="bg-white no-dark:bg-gray-900">
       <div className="container mx-auto px-6 py-8">
-        <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
-          Our Mandates
-        </h1>
-
         {/* <p className="mx-auto mt-4 max-w-2xl text-center text-gray-500 no-dark:text-gray-300 xl:mt-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quas
           magni libero consequuntur voluptatum velit amet id repudiandae ea,

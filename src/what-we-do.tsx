@@ -57,8 +57,10 @@ const WhatWeDo = () => {
   return (
     <section className="bg-white no-dark:bg-gray-900">
       <div className="h-[24rem] bg-gray-100 no-dark:bg-gray-800"></div>
-
       <div className="container mx-auto -mt-72 px-6 py-10 sm:-mt-80 md:-mt-96">
+        <h1 className="z-40 text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
+          Our Mandates
+        </h1>
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-3">
           {whatWeDo.map((e) => (
             <div className="flex flex-col items-start rounded-xl border p-4 no-dark:border-gray-700 sm:p-6 bg-white">
