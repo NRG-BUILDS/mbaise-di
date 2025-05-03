@@ -5,7 +5,6 @@ import Nav from "../nav";
 import WhatWeDo from "../what-we-do";
 import WhoWeAre from "../who-are-we";
 import { adverts } from "../ads";
-import { Logo } from "@/components/logo";
 import Footer from "@/components/footer";
 
 const Home = () => {
