@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import { Logo } from "./components/logo";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav
       x-data="{ isOpen: false }"
-      className="container mx-auto p-6 lg:flex lg:items-center lg:justify-between"
+      className="container mx-auto p-6 py-3 lg:flex lg:items-center lg:justify-between sticky md:relative top-0 z-50 bg-white shadow-md md:shadow-none lg:bg-transparent"
     >
       <div className="flex items-center justify-between">
         <div>
-          <a
+          <a href="/">
+            <Logo className="size-20" />
+          </a>
+          {/* <a
             className="text-2xl font-bold text-gray-800 hover:text-gray-700 no-dark:text-white no-dark:hover:text-gray-300 lg:text-3xl"
             href="#"
           >
-            Mbaise-di
-          </a>
+            <Logo className="size-20 mx-auto" />
+          </a> */}
         </div>
 
         <div className="flex lg:hidden">

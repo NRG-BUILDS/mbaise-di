@@ -1,4 +1,6 @@
 import { news } from "@/ads";
+import Footer from "@/components/footer";
+import { Logo } from "@/components/logo";
 import NewsCard from "@/components/NewsCard";
 import Nav from "@/nav";
 
@@ -11,6 +13,8 @@ const News = () => {
       <section className="bg-white no-dark:bg-gray-900">
         <div className="container mx-auto px-6 py-10">
           <div className="text-center">
+            <Logo className="size-72 mx-auto" />
+
             <h1 className="text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
               NEWS
             </h1>
@@ -27,6 +31,7 @@ const News = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };

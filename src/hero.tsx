@@ -1,13 +1,13 @@
 import heroBg from "@/assets/images/hero-bg.jpeg";
+import { Logo } from "./components/logo";
 
 const Hero = () => {
   return (
-    <div className="container mx-auto px-6 py-16 text-center">
+    <div className="container mx-auto px-6 py-10 text-center">
       <div className="mx-auto max-w-lg">
-        <h1 className="text-4xl font-bold text-gray-800 no-dark:text-white lg:text-6xl">
-          Mbaise-di
-        </h1>
-        <p className="mt-6 text-gray-500 no-dark:text-gray-300">
+        <Logo className="size-72 mx-auto" />
+
+        <p className="mt-3 text-gray-500 no-dark:text-gray-300">
           An Association of Mbaise Sons and Daughters Aimed at Strengthening Our
           Heritage and Empowering Our People
         </p>
