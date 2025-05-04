@@ -20,7 +20,7 @@ const NewsCard = ({ news }: Props) => {
         {news.title}
       </h1>
 
-      <hr className="my-6 w-32 text-blue-500" />
+      <hr className="my-6 w-32 text-red-500" />
 
       <p
         className={`text-sm text-gray-500 no-dark:text-gray-400 ${
@@ -32,7 +32,7 @@ const NewsCard = ({ news }: Props) => {
 
       <button
         onClick={() => setShowAll(!showAll)}
-        className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
+        className="mt-4 inline-block text-red-500 underline hover:text-red-400"
       >
         Read more
       </button>

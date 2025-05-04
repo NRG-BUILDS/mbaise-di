@@ -49,7 +49,7 @@ const Home = () => {
                   {ad.title}
                 </h1>
 
-                <hr className="my-6 w-32 text-blue-500" />
+                <hr className="my-6 w-32 text-red-500" />
 
                 <p className="text-sm text-gray-500 no-dark:text-gray-400">
                   {ad.content}
@@ -57,7 +57,7 @@ const Home = () => {
 
                 <a
                   href={ad.link}
-                  className="mt-4 inline-block text-blue-500 underline hover:text-blue-400"
+                  className="mt-4 inline-block text-red-500 underline hover:text-red-400"
                 >
                   {ad.action}
                 </a>
@@ -94,14 +94,14 @@ const Home = () => {
                 Spotlight your brand here!
               </h1>
 
-              <hr className="my-6 w-32 text-blue-500" />
+              <hr className="my-6 w-32 text-red-500" />
 
               <p className="text-sm text-gray-500 no-dark:text-gray-400">
                 Chat with us now to place your advertisement and reach a wider
                 audience.
               </p>
 
-              <p className="mt-4 inline-block text-blue-500 underline hover:text-blue-400">
+              <p className="mt-4 inline-block text-red-500 underline hover:text-red-400">
                 Chat with us on WhatsApp
               </p>
             </a>
@@ -158,7 +158,7 @@ const Home = () => {
                   insurance?
                 </h1>
 
-                <span className="rounded-full bg-blue-500 text-white">
+                <span className="rounded-full bg-red-500 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -183,7 +183,7 @@ const Home = () => {
                   Do i need a referral?
                 </h1>
 
-                <span className="rounded-full bg-blue-500 text-white">
+                <span className="rounded-full bg-red-500 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -208,7 +208,7 @@ const Home = () => {
                   What are your opening house?
                 </h1>
 
-                <span className="rounded-full bg-blue-500 text-white">
+                <span className="rounded-full bg-red-500 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"
@@ -233,7 +233,7 @@ const Home = () => {
                   What can i expect at my first consultation?
                 </h1>
 
-                <span className="rounded-full bg-blue-500 text-white">
+                <span className="rounded-full bg-red-500 text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-6 w-6"

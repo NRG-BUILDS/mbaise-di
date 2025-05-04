@@ -55,7 +55,7 @@ const Footer = () => {
     <>
       <section
         id="contact"
-        className="min-h-screen bg-gradient-to-r from-blue-600 via-blue-800 to-blue-900 no-dark:from-gray-700 no-dark:via-gray-800 no-dark:to-gray-900"
+        className="min-h-screen bg-gradient-to-r from-red-600 via-red-800 to-red-900 no-dark:from-gray-700 no-dark:via-gray-800 no-dark:to-gray-900"
       >
         <div className="container mx-auto flex min-h-screen flex-col px-6 py-12">
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
@@ -229,25 +229,25 @@ const Footer = () => {
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   Home
                 </a>
                 <a
                   href="#who-we-are"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   Who We Are
                 </a>
                 <a
                   href="#mandates"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   Our Mandates
                 </a>
                 <a
                   href="/news"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   Mbaisedi News
                 </a>
@@ -261,7 +261,7 @@ const Footer = () => {
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 {whatWeDo.map((e) => (
-                  <p className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400">
+                  <p className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400">
                     {e.title}
                   </p>
                 ))}
@@ -276,13 +276,13 @@ const Footer = () => {
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   +234 803 638 2343
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-blue-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-red-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-red-400"
                 >
                   mbaisedi.web@gmail.com
                 </a>

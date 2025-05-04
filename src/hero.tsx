@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex items-center justify-center gap-3 my-3">
           <a
             href="#who-are-we"
-            className=" inline-block  rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto"
+            className=" inline-block  rounded-lg bg-red-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-red-500 focus:outline-none lg:mx-0 lg:w-auto"
           >
             Learn More
           </a>
