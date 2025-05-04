@@ -42,7 +42,7 @@ const Footer = () => {
 
                   <span className="mx-2 w-72 truncate text-white">
                     {" "}
-                    Cecilia Chapman 711-2880 Nulla St. Mankato Mississippi 96522{" "}
+                    18, Sir Samuel Manuwa Street, Victoria Island, Lagos{" "}
                   </span>
                 </p>
 
@@ -63,7 +63,7 @@ const Footer = () => {
                   </svg>
 
                   <span className="mx-2 w-72 truncate text-white">
-                    (257) 563-7401
+                    +234 803 638 2343
                   </span>
                 </p>
 
@@ -84,7 +84,7 @@ const Footer = () => {
                   </svg>
 
                   <span className="mx-2 w-72 truncate text-white">
-                    acb@example.com
+                    mbaisedi.web@gmail.com
                   </span>
                 </p>
               </div>
