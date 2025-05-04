@@ -46,7 +46,7 @@ const WhoWeAre = () => {
   ];
 
   return (
-    <section className="bg-white no-dark:bg-gray-900" id="who-are-we">
+    <section className="bg-white no-dark:bg-gray-900" id="who-we-are">
       <div className="container mx-auto px-6 py-10">
         <h1 className="text-center text-3xl font-semibold capitalize text-gray-800 no-dark:text-white lg:text-4xl">
           Who Are We?
