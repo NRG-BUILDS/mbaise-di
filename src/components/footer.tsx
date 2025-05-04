@@ -1,6 +1,55 @@
 import { Logo } from "./logo";
+import { FormEvent, useState } from "react";
+import emailjs from "emailjs-com";
+import React from "react";
+
+const initialState = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 const Footer = () => {
+  const [{ name, email, message }, setState] = useState(initialState);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [loading, setIsLoading] = useState(false);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setState((prevState) => ({ ...prevState, [name]: value }));
+  };
+  const clearState = () => setState({ ...initialState });
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+    console.log(name, email, message);
+
+    {
+      /* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */
+    }
+
+    emailjs
+      .sendForm(
+        "service_4ffqnr8",
+        "template_4hrjx7s",
+        // @ts-ignore
+        e.target,
+        "zzUzKEDYSYNA9UlWW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsLoading(false);
+          setIsSuccess(true);
+          clearState();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <section
@@ -175,15 +224,22 @@ const Footer = () => {
                   Contact form
                 </h1>
 
-                <form className="mt-6">
+                <form
+                  name="sentMessage"
+                  onSubmit={handleSubmit}
+                  className="mt-6"
+                >
                   <div className="flex-1">
                     <label className="mb-2 block text-sm text-gray-600 no-dark:text-gray-200">
                       Full Name
                     </label>
                     <input
+                      required
+                      onChange={handleChange}
+                      name="name"
                       type="text"
                       placeholder="John Doe"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-red-300"
                     />
                   </div>
 
@@ -192,9 +248,12 @@ const Footer = () => {
                       Email address
                     </label>
                     <input
+                      required
+                      onChange={handleChange}
+                      name="email"
                       type="email"
                       placeholder="johndoe@example.com"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-red-300"
                     />
                   </div>
 
@@ -203,13 +262,24 @@ const Footer = () => {
                       Message
                     </label>
                     <textarea
-                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-blue-300 md:h-48"
+                      required
+                      onChange={handleChange}
+                      name="message"
+                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-red-300 md:h-48"
                       placeholder="Message"
                     ></textarea>
                   </div>
 
-                  <button className="mt-6 w-full transform rounded-md bg-blue-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-                    get in touch
+                  <button
+                    type="submit"
+                    disabled={loading || isSuccess}
+                    className="mt-6 disabled:opacity-50 w-full transform rounded-md bg-red-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-400 focus:ring-opacity-50"
+                  >
+                    {isSuccess
+                      ? "SENT!"
+                      : loading
+                      ? "Sending message"
+                      : "get in touch"}
                   </button>
                 </form>
               </div>
