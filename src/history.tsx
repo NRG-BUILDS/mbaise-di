@@ -7,9 +7,9 @@ const History = () => {
         </h1>
 
         <div className="mx-auto mt-6 flex justify-center">
-          <span className="inline-block h-1 w-40 rounded-full bg-red-500"></span>
-          <span className="mx-1 inline-block h-1 w-3 rounded-full bg-red-500"></span>
-          <span className="inline-block h-1 w-1 rounded-full bg-red-500"></span>
+          <span className="inline-block h-1 w-40 rounded-full bg-beige-500"></span>
+          <span className="mx-1 inline-block h-1 w-3 rounded-full bg-beige-500"></span>
+          <span className="inline-block h-1 w-1 rounded-full bg-beige-500"></span>
         </div>
 
         <div className="mx-auto mt-16 flex max-w-6xl items-start">
