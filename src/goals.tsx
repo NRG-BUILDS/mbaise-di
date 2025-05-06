@@ -27,7 +27,7 @@ const Goals = () => {
             </ol>
           </div>
 
-          <div className="w-full space-y-8 rounded-lg bg-beige-600 p-8 ">
+          <div className="w-full space-y-8 rounded-lg bg-brown-600 p-8 ">
             <p className="font-medium uppercase text-gray-200">Motto</p>
             <ol className="list-disc list-inside">
               <li className="text-xl font-bold uppercase text-white no-dark:text-gray-100">

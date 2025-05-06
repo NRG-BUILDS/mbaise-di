@@ -68,7 +68,7 @@ const WhoWeAre = () => {
               <h2 className="mt-4 text-2xl font-semibold capitalize text-gray-800 no-dark:text-white">
                 {service.title}
               </h2>
-              <p className="mt-2 text-lg tracking-wider text-beige-500 no-dark:text-beige-400">
+              <p className="mt-2 text-lg tracking-wider text-brown-500 no-dark:text-brown-400">
                 {service.content}
               </p>
             </div>

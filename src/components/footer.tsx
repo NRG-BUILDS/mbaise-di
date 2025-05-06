@@ -55,7 +55,7 @@ const Footer = () => {
     <>
       <section
         id="contact"
-        className="min-h-screen bg-gradient-to-r from-beige-600 via-beige-800 to-beige-900 no-dark:from-gray-700 no-dark:via-gray-800 no-dark:to-gray-900"
+        className="min-h-screen bg-gradient-to-r from-brown-600 via-brown-800 to-brown-900 no-dark:from-gray-700 no-dark:via-gray-800 no-dark:to-gray-900"
       >
         <div className="container mx-auto flex min-h-screen flex-col px-6 py-12">
           <div className="flex-1 lg:-mx-6 lg:flex lg:items-center">
@@ -161,7 +161,7 @@ const Footer = () => {
                       name="name"
                       type="text"
                       placeholder="John Doe"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-beige-400 focus:outline-none focus:ring focus:ring-beige-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-beige-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-brown-400 focus:outline-none focus:ring focus:ring-brown-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-brown-300"
                     />
                   </div>
 
@@ -175,7 +175,7 @@ const Footer = () => {
                       name="email"
                       type="email"
                       placeholder="johndoe@example.com"
-                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-beige-400 focus:outline-none focus:ring focus:ring-beige-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-beige-300"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 focus:border-brown-400 focus:outline-none focus:ring focus:ring-brown-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-brown-300"
                     />
                   </div>
 
@@ -187,7 +187,7 @@ const Footer = () => {
                       required
                       onChange={handleChange}
                       name="message"
-                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-beige-400 focus:outline-none focus:ring focus:ring-beige-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-beige-300 md:h-48"
+                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-brown-400 focus:outline-none focus:ring focus:ring-brown-300 focus:ring-opacity-40 no-dark:border-gray-600 no-dark:bg-gray-900 no-dark:text-gray-300 no-dark:focus:border-brown-300 md:h-48"
                       placeholder="Message"
                     ></textarea>
                   </div>
@@ -195,7 +195,7 @@ const Footer = () => {
                   <button
                     type="submit"
                     disabled={loading || isSuccess}
-                    className="mt-6 disabled:opacity-50 w-full transform rounded-md bg-beige-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-beige-500 focus:outline-none focus:ring focus:ring-beige-400 focus:ring-opacity-50"
+                    className="mt-6 disabled:opacity-50 w-full transform rounded-md bg-brown-600 px-6 py-3 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-brown-500 focus:outline-none focus:ring focus:ring-brown-400 focus:ring-opacity-50"
                   >
                     {isSuccess
                       ? "SENT!"
@@ -229,25 +229,25 @@ const Footer = () => {
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   Home
                 </a>
                 <a
                   href="#who-we-are"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   Who We Are
                 </a>
                 <a
                   href="#mandates"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   Our Mandates
                 </a>
                 <a
                   href="/news"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   Mbaisedi News
                 </a>
@@ -261,7 +261,7 @@ const Footer = () => {
 
               <div className="mt-5 flex flex-col items-start space-y-2">
                 {whatWeDo.map((e) => (
-                  <p className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400">
+                  <p className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400">
                     {e.title}
                   </p>
                 ))}
@@ -276,13 +276,13 @@ const Footer = () => {
               <div className="mt-5 flex flex-col items-start space-y-2">
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   +234 803 638 2343
                 </a>
                 <a
                   href="#"
-                  className="text-gray-600 transition-colors duration-300 hover:text-beige-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-beige-400"
+                  className="text-gray-600 transition-colors duration-300 hover:text-brown-500 hover:underline no-dark:text-gray-300 no-dark:hover:text-brown-400"
                 >
                   mbaisedi.web@gmail.com
                 </a>

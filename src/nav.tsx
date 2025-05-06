@@ -71,31 +71,31 @@ const Nav = () => {
       >
         <div className="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
           <a
-            className="transform text-gray-700 transition-colors duration-300 hover:text-beige-500 no-dark:text-gray-200 no-dark:hover:text-beige-400 lg:mx-8"
+            className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
             href="#"
           >
             Home
           </a>
           <a
-            className="transform text-gray-700 transition-colors duration-300 hover:text-beige-500 no-dark:text-gray-200 no-dark:hover:text-beige-400 lg:mx-8"
+            className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
             href="#who-are-we"
           >
             Who Are We?
           </a>
           <a
-            className="transform text-gray-700 transition-colors duration-300 hover:text-beige-500 no-dark:text-gray-200 no-dark:hover:text-beige-400 lg:mx-8"
+            className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
             href="#history"
           >
             History
           </a>
           <Link
-            className="transform text-gray-700 transition-colors duration-300 hover:text-beige-500 no-dark:text-gray-200 no-dark:hover:text-beige-400 lg:mx-8"
+            className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
             to="/news"
           >
             News
           </Link>
           <a
-            className="transform text-gray-700 transition-colors duration-300 hover:text-beige-500 no-dark:text-gray-200 no-dark:hover:text-beige-400 lg:mx-8"
+            className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
             href="#contact"
           >
             Contact
@@ -103,7 +103,7 @@ const Nav = () => {
         </div>
 
         <a
-          className="mt-4 block rounded-lg bg-beige-600 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-beige-500 lg:mt-0 lg:w-auto"
+          className="mt-4 block rounded-lg bg-brown-600 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-brown-500 lg:mt-0 lg:w-auto"
           href="#who-are-we"
         >
           {" "}
