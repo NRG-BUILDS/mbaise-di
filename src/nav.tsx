@@ -72,19 +72,19 @@ const Nav = () => {
         <div className="lg:-px-8 flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
           <a
             className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
-            href="#"
+            href="/"
           >
             Home
           </a>
           <a
             className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
-            href="#who-are-we"
+            href="/#who-are-we"
           >
             Who Are We?
           </a>
           <a
             className="transform text-gray-700 transition-colors duration-300 hover:text-brown-500 no-dark:text-gray-200 no-dark:hover:text-brown-400 lg:mx-8"
-            href="#history"
+            href="/#history"
           >
             History
           </a>
@@ -104,7 +104,7 @@ const Nav = () => {
 
         <a
           className="mt-4 block rounded-lg bg-brown-600 px-6 py-2.5 text-center font-medium capitalize leading-5 text-white hover:bg-brown-500 lg:mt-0 lg:w-auto"
-          href="#who-are-we"
+          href="/#who-we-are"
         >
           {" "}
           Learn More{" "}

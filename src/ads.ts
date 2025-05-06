@@ -1,38 +1,36 @@
 export const adverts = [
   {
-    image:
-      "https://images.unsplash.com/photo-1556742043-908ecf5f6d87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    title: "Best Dentistry in Lagos, Now 20% off",
+    image: "/promotions/mechanic.webp",
+    title: "Chike's Electricals – Reliable Repairs & Installations",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris",
-    contact: "emmanuelomolaki@gmail.com",
-    client: "Emmanuel Dentist Clinic",
-    link: "https://google.com/emmanuel-omolaju",
-    action: "Learn more",
+      "Need wiring, repairs, or new electrical installations? Chike's Electricals in Awka offers trusted services with affordable rates. Fast response guaranteed.",
+    contact: "chike.electricals@gmail.com",
+    client: "Chike's Electricals",
+    link: "https://example.com/chike-electricals",
+    action: "Contact Us",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    title: "Master Forex Trading in 30 Days",
+    image: "/promotions/restaurant.jpg",
+    title: "Adaoma's Catering – Taste of Tradition",
     content:
-      "Join our comprehensive forex trading class and learn the secrets of successful trading. From beginner to pro, we've got you covered.",
-    contact: "forexmasterclass@gmail.com",
-    client: "Forex Master Academy",
-    link: "https://google.com/forex-master-class",
-    action: "Enroll now",
+      "From weddings to birthdays, Adaoma’s Catering in Enugu brings delicious traditional Igbo dishes to your event. Book now for your next occasion!",
+    contact: "adaomacatering@gmail.com",
+    client: "Adaoma's Catering Services",
+    link: "https://example.com/adaoma-catering",
+    action: "Book Today",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    title: "Apply for Admission at Greenfield Academy",
+    image: "/promotions/tailors.jpg",
+    title: "Omalicha Tailors: Custom Clothing at Affordable Prices",
     content:
-      "Greenfield Academy is now accepting applications for the new academic session. Secure your child's future with quality education.",
-    contact: "admissions@greenfieldacademy.com",
-    client: "Greenfield Academy",
-    link: "https://google.com/greenfield-academy",
-    action: "Apply now",
+      "Get your traditional and modern outfits sewn by the best hands at Omalicha Tailors. Enjoy quality service and attention to detail at great prices.",
+    contact: "omalichatailors@gmail.com",
+    client: "Omalicha Tailors, Umuahia",
+    link: "https://google.com/omalicha-tailors",
+    action: "Book Now",
   },
 ];
+
 export const news = [
   {
     image:
