@@ -1,23 +1,23 @@
 export const adverts = [
   {
-    image: "/promotions/mechanic.webp",
-    title: "Chike's Electricals – Reliable Repairs & Installations",
+    image: "/promotions/outlook-1.webp",
+    title: "Q2 Imo Economic Outlook",
     content:
-      "Need wiring, repairs, or new electrical installations? Chike's Electricals in Awka offers trusted services with affordable rates. Fast response guaranteed.",
-    contact: "chike.electricals@gmail.com",
-    client: "Chike's Electricals",
-    link: "https://example.com/chike-electricals",
-    action: "Contact Us",
+      "Business spotlight ABC Transport: 32 Years of Building a National logistics Business from Owerri",
+    contact: "",
+    client: "The Imo Economic Submit Group",
+    link: "",
+    action: "",
   },
   {
-    image: "/promotions/restaurant.jpg",
-    title: "Adaoma's Catering – Taste of Tradition",
+    image: "/promotions/outlook-2.jpg",
+    title: "Q2 Imo Economic Outlook",
     content:
-      "From weddings to birthdays, Adaoma’s Catering in Enugu brings delicious traditional Igbo dishes to your event. Book now for your next occasion!",
-    contact: "adaomacatering@gmail.com",
-    client: "Adaoma's Catering Services",
-    link: "https://example.com/adaoma-catering",
-    action: "Book Today",
+      "Business spotlight ABC Transport: 32 Years of Building a National logistics Business from Owerri",
+    contact: "",
+    client: "The Imo Economic Submit Group",
+    link: "",
+    action: "",
   },
   {
     image: "/promotions/tailors.jpg",
