@@ -39,7 +39,7 @@ const Home = () => {
               <div>
                 <div className="relative">
                   <img
-                    className="h-64 w-full rounded-lg object-cover object-center lg:h-80"
+                    className="h-64 w-full rounded-lg object-contain object-center lg:h-80"
                     src={ad.image}
                     alt=""
                   />

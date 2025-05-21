@@ -1,6 +1,6 @@
 export const adverts = [
   {
-    image: "/promotions/outlook-1.webp",
+    image: "/promotions/outlook-1.jpg",
     title: "Q2 Imo Economic Outlook",
     content:
       "Business spotlight ABC Transport: 32 Years of Building a National logistics Business from Owerri",
